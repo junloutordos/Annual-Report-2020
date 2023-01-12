@@ -520,7 +520,106 @@ section {
   transition: 0.9s;
   background-color: #0563bb;
 }
+/* start - previous button customization */
+.button-previous {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 
+.button-previous:hover,
+.button-previous:active {
+  outline: 0;
+}
+
+.button-previous:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-previous:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-previous:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-previous {
+    padding: 16px 32px;
+  }
+}
+/* end - previous button customization */
+/* start - next button customization */
+.button-next {
+  background-color: transparent;
+  border: 1px solid #0f9e67;
+  box-sizing: border-box;
+  color: #001109;
+  
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-next:hover,
+.button-next:active {
+  outline: 0;
+}
+
+.button-next:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-next:before {
+  background-color: #d4fce6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-next:hover:before {
+  background-color: #6df6d4;
+}
+
+@media (min-width: 768px) {
+  .button-next {
+    padding: 16px 32px;
+  }
+}
+/* end - next button customization */
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
